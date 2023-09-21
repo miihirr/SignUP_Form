@@ -88,3 +88,17 @@ input:focus:valid:not(input[type="submit"]){
 input:focus:invalid:not(input[type="submit"]){
     background: rgb(255, 164, 164);
 }
+img{
+    max-height: 400px;
+}
+.credit{
+    position: absolute;
+    bottom: 0;
+    left: 10rem;
+}
+.credit span{
+    color: white;
+}
+.credit a{
+    font-weight: bold;
+}
