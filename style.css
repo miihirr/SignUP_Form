@@ -82,3 +82,9 @@ input[type="submit"]:hover{
 a{
     margin-left: .3rem;
 }
+input:focus:valid:not(input[type="submit"]){
+    background: rgb(172, 255, 172);
+}
+input:focus:invalid:not(input[type="submit"]){
+    background: rgb(255, 164, 164);
+}
