@@ -1,5 +1,6 @@
 let green="rgb(172, 255, 172)";
 let red= "rgb(255, 164, 164)";
+let allTrue=false;
 function validate(){
     let pass=document.getElementById("password");
     let len=document.getElementById("length");
@@ -7,7 +8,6 @@ function validate(){
     let lower=document.getElementById("lower");
     let specialChar=document.getElementById("specialChar");
     let num=document.getElementById("number");
-    let allTrue=false;
     if(pass.value.match(/[0-9]/)){
         num.style.color="green";
         allTrue=true;
@@ -72,10 +72,18 @@ function conform(){
         pass2.style.background="rgb(255, 164, 164)";
         msg.innerHTML="*Password doesn't match";
         msg.style.color="rgb(255, 164, 164)";
+        allTrue=false;
     }
     else{
         pass2.style.background="rgb(172, 255, 172)";
         msg.innerHTML="";
+        allTrue=true;
     }
 }
-
+let form=document.getElementById("myForm");
+form.addEventListener("submit",(e)=>{
+    if(allTrue==false){
+        e.preventDefault();
+        alert("Password does not match! please try again.")
+    }
+});
