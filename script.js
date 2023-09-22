@@ -65,25 +65,26 @@ function validate(){
 
 }
 function conform(){
+    allTrue=false;
     let pass1=document.getElementById("password");
     let pass2=document.getElementById("password2");
     let msg=document.getElementById("message2");
-    if(pass1.value !== pass2.value){
+    if((pass1.value == pass2.value) && pass2.value.length>8){
+        pass2.style.background="rgb(172, 255, 172)";
+        msg.innerHTML="";
+        allTrue=true;
+    }
+    else{
         pass2.style.background="rgb(255, 164, 164)";
         msg.innerHTML="*Password doesn't match";
         msg.style.color="rgb(255, 164, 164)";
         allTrue=false;
-    }
-    else{
-        pass2.style.background="rgb(172, 255, 172)";
-        msg.innerHTML="";
-        allTrue=true;
     }
 }
 let form=document.getElementById("myForm");
 form.addEventListener("submit",(e)=>{
     if(allTrue==false){
         e.preventDefault();
-        alert("Password does not match! please try again.")
+        alert("Password does not match as requirement! please try again.");
     }
 });
