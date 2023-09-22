@@ -29,12 +29,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 64px;
+    padding: 42px;
     font-size: 25px;
 }
 .form{
     display: flex;
-    justify-content: space-around;
+    gap: 5rem;
 }
 label{
     display: block;
@@ -43,7 +43,7 @@ label{
     font-weight: bold;
 }
 .formFill{
-    margin:39px;
+    padding: 1rem;
 }
 input{
     width: 15rem;
@@ -52,14 +52,18 @@ input{
 }
 .box2{
     background-color: aliceblue;
+    padding: 22px;
+    padding-left: 64px;
+    padding-bottom: 0px;
+    height: 55%;
 }
 h2{
-    margin:22px;
+    margin:1rem;
 }
 input[type="submit"]{
     position:relative;
-    top: 4rem;
-    left: 2rem;
+    top: 1.8rem;
+    left: 1rem;
     text-align: center;
     font-size: 22px;
     border-radius: 5px;
@@ -76,7 +80,7 @@ input[type="submit"]:hover{
     align-items: end;
     height: 100vh;
     padding: 22px;
-    margin-left: 5.3rem;
+    margin-left: 4.3rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 a{
@@ -101,4 +105,18 @@ img{
 }
 .credit a{
     font-weight: bold;
+}
+.message{
+padding: 10px;
+font-size: .9rem;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-transform: capitalize;
+}
+ul{
+    padding: 8px;
+}
+#message2{
+    padding: 10px;
+font-size: .9rem;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
